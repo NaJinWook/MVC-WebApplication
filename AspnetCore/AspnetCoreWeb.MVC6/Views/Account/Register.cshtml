@@ -1,0 +1,31 @@
+﻿@model AspnetCoreWeb.MVC6.Models.User
+<!--누구 인지를 알리기위해-->
+
+<h2>회원가입</h2>
+
+<form class="form-horizontal" method="post" asp-controller="Account" asp-action="Register">
+    <div class="form-group">
+        <label>사용자 ID</label>
+        <input type="text" class="form-control" asp-for="UserId" placeholder="사용자 ID 입력" />
+        <span class="text-danger" asp-validation-for="UserId"></span> <!--span태그엔 아무것도 적지 않는다-->
+    </div>
+
+    <div class="form-group">
+        <label>사용자 비밀번호</label>
+        <input type="password" class="form-control" asp-for="UserPassword" placeholder="비밀번호 입력" />
+        <span class="text-danger" asp-validation-for="UserPassword"></span> <!--span태그엔 아무것도 적지 않는다-->
+    </div>
+
+    <div class="form-group">
+        <label>사용자 이름</label>
+        <input type="text" class="form-control" asp-for="UserName" placeholder="사용자 이름 입력" />
+        <span class="text-danger" asp-validation-for="UserName"></span> <!--span태그엔 아무것도 적지 않는다-->
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">회원가입</button> <!--submit은 여기 있는 폼의 정보를 다 보냄-->
+        <a class="btn btn-warning" herf="#">취소</a> <!--취소버튼은 링크로 하여 다시 돌아가게 표현-->
+    </div>
+</form>
+
+
