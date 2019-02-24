@@ -15,7 +15,7 @@ namespace AspnetCoreWeb.MVC6.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult LoginSuccess() // 로그인 성공 페이지
         {
             return View();
         }
